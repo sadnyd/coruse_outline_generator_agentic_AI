@@ -1,0 +1,6 @@
+USER INPUT:
+Title: {course_title}
+Description: {course_description}
+Audience: {audience_level} ({audience_category})
+Depth: {depth_requirement}
+Duration: {duration_hours}h | Mode: {learning_mode}

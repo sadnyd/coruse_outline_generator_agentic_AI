@@ -1,0 +1,7 @@
+Given this module description, {request}:
+
+Module: {module_title}
+Description: {module_description}
+Learning Objectives: {learning_objectives}
+
+Provide the refined content. Keep it concise and professional.

@@ -1,0 +1,128 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "course-ai-agent"
+version = "0.1.0"
+description = "AI-powered course outline generator using agentic LLM architecture"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "TCS AI Team", email = "ai@tcs.com"}
+]
+
+keywords = [
+    "ai",
+    "agents",
+    "course-design",
+    "llm",
+    "langchain",
+    "streamlit",
+    "rag",
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "streamlit>=1.28.0",
+    "langchain>=0.1.0",
+    "langchain-openai>=0.0.2",
+    "chromadb>=0.4.0",
+    "pydantic>=2.5.0",
+    "python-dotenv>=1.0.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.10.0",
+    "isort>=5.12.0",
+    "pylint>=3.0.0",
+    "mypy>=1.6.0",
+]
+
+search = [
+    "tavily-python>=0.1.0",
+    "duckduckgo-search>=3.9.0",
+    "google-search-results>=2.4.2",
+]
+
+pdf = [
+    "PyPDF2>=3.0.1",
+]
+
+all = [
+    "course-ai-agent[dev,search,pdf]",
+]
+
+[project.urls]
+Homepage = "https://github.com/tcs/course-ai-agent"
+Documentation = "https://github.com/tcs/course-ai-agent/tree/main/docs"
+Repository = "https://github.com/tcs/course-ai-agent"
+"Bug Tracker" = "https://github.com/tcs/course-ai-agent/issues"
+
+[tool.setuptools]
+packages = ["agents", "schemas", "tools", "utils", "vectorstore", "tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310", "py311", "py312"]
+include = '\.pyi?$'
+
+[tool.isort]
+profile = "black"
+line_length = 100
+known_first_party = ["agents", "schemas", "tools", "utils", "vectorstore"]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+    "R0801",  # duplicate-code
+    "R0913",  # too-many-arguments
+    "W0212",  # protected-access
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+asyncio_mode = "auto"
+markers = [
+    "phase0: Phase 0 - Foundation tests",
+    "phase1: Phase 1 - UI tests",
+    "phase2: Phase 2 - Orchestrator tests",
+    "phase3: Phase 3 - Retrieval tests",
+    "phase4: Phase 4 - Web Search tests",
+    "phase5: Phase 5 - Module Creation tests",
+    "phase6: Phase 6 - Validator tests",
+    "phase7: Phase 7 - Query Agent tests",
+    "phase8: Phase 8 - UX tests",
+    "phase9: Phase 9 - Observability tests",
+]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+check_untyped_defs = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+show_error_codes = true
+show_error_context = true

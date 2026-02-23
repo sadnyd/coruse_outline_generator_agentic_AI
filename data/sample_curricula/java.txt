@@ -1,0 +1,368 @@
+Object Oriented Programming with Java
+by
+
+Debasis Samanta
+
+Associate Professor ,Department of Computer Science and Engineering, Indian Institute of Technology Kharagpur, India
+
+
+C  O  N  T  E  N  T  S
+Overview
+CHAPTER 1:   Fundamentals of Java
+Introduction
+Java Programming Paradigms
+Object-Oriented Programming
+Platform Independent Programming Environment
+Multithreading
+Security in Java
+Advantages of Java
+Easy Development of Large Applications
+Simple, Portable, and Robust Programming
+High Performance of Java
+Internet Access Capability
+Distributed Computing with Java
+Tools Available for Java Programming
+Java Developer�s Kit (JDK)
+Java Packages
+Java -Enabled Web Browser
+Other Third-party Tools
+Assignment
+Q&A
+CHAPTER 2:   Programming in Java
+Introduction
+Building Java Applications
+Building Java applets
+Basic Methods in Applet
+Differences between applet and Application
+Practice Questions
+Assignment
+Q&A
+CHAPTER 3:   Object Oriented Mechanism in Java
+Introduction
+Class Definition in Java
+Constructors
+Inheritance
+Polymorphism in Java
+Dynamic Method Dispatch
+Access Specification in Java
+Practice Questions
+Assignment
+Q&A
+CHAPTER 4:    Interfaces and Packages in Java
+Introduction
+Interfaces in Java
+Interface methods
+Inheritance in Interfaces
+Packages in Java
+API : The built-in Java Packages
+Organization of user packages
+Managing user packages
+Practice Questions
+Assignment
+Q&A
+CHAPTER 5:   Exception Handling in Java
+Introduction
+Built-in classes for exceptions handling in Java
+Mechanism of Exceptions Handling in Java
+Error Handling Exception Classes
+Practice Questions
+Assignment
+Q&A
+CHAPTER 6:   Threads and Multithreading in Java
+Introduction
+Basics of a thread
+Creating and Running a Thread
+Life cycle of threads
+Status of a Thread
+Synchronization and Inter-Thread Communication
+Synchronization
+Inter-thread Communication
+Thread Groups and Daemon
+Practice Questions
+Assignment
+Q&A
+CHAPTER 7:   Application Development in Java
+Introduction
+Designing GUI with Components and Layout Managers
+Using Components for Java GUIs
+Using Layout Managers for Java GUI
+GridBagLayoutManager
+Event Handling
+Drawing methods for Graphics objects
+Practice Questions
+Assignment
+Q&A
+CHAPTER 8:   Java Input/Output and Networking
+Introduction
+Java File I/O
+Java Files
+Input Stream
+Output Stream
+Networking in Java
+Internet addressing method in Java
+Communication using UDP
+Communication Using TCP
+Practice Questions
+Assignment
+Q&A
+CHAPTER 9:   Java Multimedia
+Introduction
+Multimedia basics in Java
+Audio basics
+Image basics
+Web page in Java
+World Wide Web basics
+Preparing Web Documents in Java
+Applet hosted HTML Document
+HTML Snapshots
+Practice Questions
+Assignment
+Q&A
+CHAPTER 10:   Java Swing
+Introduction
+AWT versus Swing
+Swing in depth
+Java Swing examples
+Practice Questions
+Assignment
+Q&A
+CHAPTER 11:   JDBC
+Introduction
+MySQL Basics and setup installation
+JDBC: Java Database Connectivity
+JDBC: Characteristics
+Relational database
+Types of JDBC Drivers
+JDBC Architectures
+Inside JDBC
+Connecting to Database
+Examples
+CHAPTER 12:   The Applet Package
+Introduction
+Class Applet
+Interface AppletContext
+Interface AppletStub
+Interface AudioClip
+CHAPTER 13:   The Java Language Package
+Introduction
+Class Boolean
+Class Character
+Class Class
+Class ClassLoader
+Class Compiler
+Class Double
+Class Float
+Class Integer
+Class Long
+Class Math
+Class Number
+Class Object
+Class Process
+Class Runtime
+Class SecurityManager
+Class String
+Class StringBuffer
+Class System
+Class Thread
+Class ThreadGroup
+Class Throwable
+Interface Cloneable
+Interface Runnable
+Class ArithmeticException
+Class ArrayIndexOutOfBoundsException
+Class ArrayStoreException
+Class ClassCastException
+Class ClassNotFoundException
+Class CloneNotSupportedException
+Class Exception
+Class IllegalAccessException
+Class IllegalArgumentException
+Class IllegalMonitorStateException
+Class IllegalThreadStateException
+Class IndexOutOfBoundsException
+Class InstantiationException
+Class InterruptedException
+Class NegativeArraySizeException
+Class NoSuchMethodException
+Class NullPointerException
+Class NumberFormatException
+Class RuntimeException
+Class SecurityException
+Class StringIndexOutOfBoundsException
+Class AbstractMethodError
+Class ClassCircularityError
+Class ClassFormatError
+Class Error
+Class IllegalAccessError
+Class IncompatibleClassChangeError
+Class InstantiationError
+Class InternalError
+Class LinkageError
+Class NoClassDefFoundError
+Class NoSuchFieldError
+Class NoSuchMethodError
+Class OutOfMemoryError
+Class StackOverflowError
+Class ThreadDeath
+Class UnknownError
+Class UnsatisfiedLinkError
+Class VerifyError
+Class VirtualMachineError
+CHAPTER 14:   The Java Utility Package
+Introduction
+Class BitSet
+Class Date
+Class Dictionary
+Class Hashtable
+Class Observable
+Class Properties
+Class Random
+Class Stack
+Class StringTokenizer
+Class Vector
+Interface Enumeration
+Interface Observer
+The awt Event Handler
+Class EmptyStackException
+Class NoSuchElementException
+CHAPTER 15:   The Abstract Window Toolkit (AWT) Package
+Introduction
+Class BorderLayout
+Class Button
+Class Canvas
+Class CardLayout
+Class Checkbox
+Class CheckboxGroup
+Class CheckboxMenuItem
+Class Choice
+Class Color
+Class Component
+Class Container
+Class Dialog
+Class Dimension
+Class Event
+Class FileDialog
+Class FlowLayout
+Class Font
+Class FontMetrics
+Class Frame
+Class Graphics
+Class GridBagConstraints
+Class GridBagLayout
+Class GridLayout
+Class Image
+Class Insets
+Class Label
+Class List
+Class MediaTracker
+Class Menu
+Class MenuBar
+Class MenuComponent
+Class MenuItem
+Class Panel
+Class Point
+Class Polygon
+Class Rectangle
+Class Scrollbar
+Class TextArea
+Class TextComponent
+Class TextField
+Class Toolkit
+Class Window
+Interface LayoutManager
+Interface MenuContainer
+Class AWTException
+Class AWTError
+CHAPTER 16:   The AWT Image Package
+Introduction
+Class ColorModel
+Class CropImageFilter
+Class DirectColorModel
+Class FilteredImageSource
+Class ImageFilter
+Class IndexColorModel
+Class MemoryImageSource
+Class PixelGrabber
+Class RGBImageFilter
+Interface ImageConsumer
+Interface ImageObserver
+Interface ImageProducer
+CHAPTER 17:   The AWT Peer Package
+Introduction
+Interface ButtonPeer
+Interface CanvasPeer
+Interface CheckboxMenuItemPeer
+Interface CheckboxPeer
+Interface ChoicePeer
+Interface ComponentPeer
+Interface ContainerPeer
+Interface DialogPeer
+Interface FileDialogPeer
+Interface FramePeer
+Interface LabelPeer
+Interface ListPeer
+Interface MenuBarPeer
+Interface MenuComponentPeer
+Interface MenuItemPeer
+Interface MenuPeer
+Interface PanelPeer
+Interface ScrollbarPeer
+Interface TextAreaPeer
+Interface TextComponentPeer
+Interface TextFieldPeer
+Interface WindowPeer
+CHAPTER 18:   The Java I/O Package
+Introduction
+Class BufferedInputStream
+Class BufferedOutputStream
+Class ByteArrayInputStream
+Class ByteArrayOutputStream
+Class DataInputStream
+Class DataOutputStream
+Class File
+Class FileDescriptor
+Class FileInputStream
+Class FileOutputStream
+Class FilterInputStream
+Class FilterOutputStream
+Class InputStream
+Class LineNumberInputStream
+Class OutputStream
+Class PipedInputStream
+Class PipedOutputStream
+Class PrintStream
+Class PushbackInputStream
+Class RandomAccessFile
+Class SequenceInputStream
+Class StreamTokenizer
+Class StringBufferInputStream
+Interface DataInput
+Interface DataOutput
+Interface FilenameFilter
+Class EOFException
+Class FileNotFoundException
+Class IOException
+Class InterruptedIOException
+Class UTFDataFormatException
+CHAPTER 19:   The Java Networking Package
+Introduction
+Class ContentHandler
+Class DatagramPacket
+Class DatagramSocket
+Class InetAddress
+Class ServerSocket
+Class Socket
+Class SocketImpl
+Class URL
+Class URLConnection
+Class URLEncoder
+Class URLStreamHandler
+Throwing Exceptions
+Interface ContentHandlerFactory
+Interface SocketImplFactory
+Interface URLStreamHandlerFactory
+Class MalformedURLException
+Class ProtocolException
+Class SocketException
+Class UnknownHostException
+Class UnknownServiceException

@@ -1,0 +1,93 @@
+"""Prompt templates (PHASE 0 planning, PHASE 5+ usage)."""
+
+# These are plain-text templates that will be loaded and used by agents.
+# They are NOT actual implementations yet—just placeholders for planning.
+
+ORCHESTRATOR_PROMPT = """
+PHASE 2+: Orchestrator coordinates agent calls.
+
+Input: UserInputSchema
+Process: Dispatch to agents in parallel/sequence
+Output: CourseOutlineSchema
+
+Constraints to respect:
+- Duration (hours)
+- Depth requirement
+- Audience level
+- Learning mode
+"""
+
+WEB_SEARCH_PROMPT = """
+PHASE 4: Web Search Agent constructs autonomous query.
+
+Input: course topic, audience level, depth requirement
+Goal: Find public curricula, syllabi, MOOCs, textbooks, industry maps
+Output: WebSearchAgentOutput with ranked results + URLs
+
+Search strategy:
+1. Try Tavily
+2. Fallback to DuckDuckGo
+3. If needed, fallback to SerpAPI
+"""
+
+MODULE_CREATOR_PROMPT = """
+PHASE 5: Module Creation Agent synthesizes outline.
+
+Inputs:
+- User input (title, description, constraints)
+- Retrieved doc chunks (from Retrieval Agent)
+- Web search results (from Web Search Agent)
+- Uploaded PDF content (optional)
+
+Process:
+- Map learning objectives to Bloom's taxonomy
+- Apply backward design (outcomes → lessons → activities)
+- Respect duration, depth, audience
+- Generate assessments aligned to objectives
+
+Output: CourseOutlineSchema
+- Modules (2-8 typically)
+- Learning objectives (3-7 per module, measurable)
+- Lessons with activities and resources
+- Assessments
+- Provenance citations
+"""
+
+VALIDATOR_PROMPT = """
+PHASE 6: Validator Agent scores outline.
+
+Rubric (0-100):
+- Coverage & Coherence (0-25): All topics covered? Logical flow?
+- Audience Alignment (0-20): Language/depth match audience?
+- Depth & Accuracy (0-20): Technically correct? Depth appropriate?
+- Assessability (0-15): Objectives measurable? Assessments aligned?
+- Practicality (0-10): Realistic pacing? Total hours feasible?
+- Originality (0-10): Unique structure? No plagiarism?
+
+Output: ValidatorFeedbackSchema
+- Score
+- Rubric breakdown
+- Accept/Reject (threshold 75)
+- Targeted feedback for any issues
+"""
+
+QUERY_AGENT_PROMPT = """
+PHASE 7: Query Agent answers follow-ups.
+
+Sample questions:
+- "Why is this module included?"
+- "Which resources influenced Module 2?"
+- "Can you simplify the prerequisite section?"
+
+Context access:
+- User input
+- Retrieved docs
+- Web results
+- Generated outline
+
+Output: QueryAgentResponse
+- Natural language answer
+- Source references (no hallucinations)
+- Confidence score
+- Optional regeneration signal
+"""

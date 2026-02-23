@@ -1,0 +1,107 @@
+/mnt/c/Users/sadny/Documents/GitHub/course_outline_generator/tools/web_search_tools.py:204: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  ddgs = DDGS()
+/mnt/c/Users/sadny/Documents/GitHub/course_outline_generator/tools/web_search_tools.py:204: RuntimeWarning: This package (`duckduckgo_search`) has been renamed to `ddgs`! Use `pip install ddgs` instead.
+  ddgs = DDGS()
+
+================================================================================
+🚀 COMPREHENSIVE FLOW LOGGING VERIFICATION TEST
+================================================================================
+
+[1/6] Preparing for test...
+✓ Session ID: 412e0480
+✓ Logs location: logs/flow.log
+
+[2/6] Creating comprehensive synthetic input...
+✓ Course Title: Advanced Python: From Basics to Production-Ready Applications
+✓ Duration: 60 hours
+✓ Audience: intermediate working_professionals
+✓ Mode: project_based
+✓ Depth: advanced_implementation
+✓ Constraints: Must include: testing strategies (unittest, pytest...
+
+[3/6] Initializing orchestrator...
+✅ VectorStore initialized with ChromaDB
+✓ Orchestrator initialized
+
+[4/6] Executing complete pipeline...
+→ This will run: Retrieval → Web Search → Duration Allocation → Template → LLM Generation
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+✓ Pipeline completed successfully!
+
+📊 Pipeline Result Summary:
+  • Course Title: Advanced Python: From Basics to Production-Ready Applications
+  • Modules Generated: 11
+    1. Python Fundamentals Refresher (5.5h, 3 objectives)
+    2. Advanced Object-Oriented Programming in Python (5.5h, 4 objectives)
+    3. Functional Programming in Python (5.5h, 4 objectives)
+    ... and 8 more modules
+
+[5/6] Finalizing session...
+✓ Session ended
+
+[6/6] Analyzing comprehensive flow logs...
+
+================================================================================
+📋 FLOW LOG ANALYSIS
+================================================================================
+
+📈 Log Entry Statistics:
+  • INFO entries: 41
+  • SUCCESS entries: 0
+  • WARNING entries: 0
+  • ERROR entries: 0
+
+🔄 Function Call Tracking:
+  • Functions entered: 19
+  • Functions exited: 21
+  • Matched pairs: 19
+
+🔍 Functions Logged (7 unique):
+  • CourseOutlineSchema.validate_course_objectives 
+  • CourseOutlineSchema.validate_duration 
+  • CourseOutlineSchema.validate_module_objectives 
+  • ModuleCreationAgent._build_references (2×)
+  • ModuleCreationAgent._calculate_completeness (2×)
+  • ModuleCreationAgent._calculate_confidence (2×)
+  • ModuleCreationAgent._parse_objective (10×)
+
+✅ No errors in logs!
+
+📌 Session Information:
+  • Session ID: 412e0480
+  • Mentions in logs: 41
+
+📋 Sample Log Entries (ENTER/EXIT pairs):
+--------------------------------------------------------------------------------
+2026-02-22 13:14:51 | INFO     | [412e0480] → ENTER: ModuleCreationAgent._build_references | Build  references
+2026-02-22 13:14:51 | INFO     | [412e0480] → ENTER: ModuleCreationAgent._build_references | Build  references
+2026-02-22 13:14:51 | INFO     | [412e0480] ← EXIT: ModuleCreationAgent._build_references | 0.000s
+2026-02-22 13:14:51 | INFO     | [412e0480] ← EXIT: ModuleCreationAgent._build_references | 0.001s
+2026-02-22 13:14:51 | INFO     | [412e0480] → ENTER: ModuleCreationAgent._parse_objective | Execute  parse objective
+2026-02-22 13:14:51 | INFO     | [412e0480] → ENTER: ModuleCreationAgent._parse_objective | Execute  parse objective
+2026-02-22 13:14:51 | INFO     | [412e0480] ← EXIT: ModuleCreationAgent._parse_objective | 0.000s
+2026-02-22 13:14:51 | INFO     | [412e0480] ← EXIT: ModuleCreationAgent._parse_objective | 0.000s
+2026-02-22 13:14:51 | INFO     | [412e0480] → ENTER: ModuleCreationAgent._parse_objective | Execute  parse objective
+2026-02-22 13:14:51 | INFO     | [412e0480] → ENTER: ModuleCreationAgent._parse_objective | Execute  parse objective
+
+================================================================================
+✅ COMPREHENSIVE FLOW LOGGING VERIFICATION COMPLETE
+================================================================================
+
+📊 FINAL SUMMARY:
+  • Total log entries: 41
+  • Unique functions logged: 7
+  • Function calls tracked: 19
+  • Errors: 0
+  • Session ID: 412e0480
+
+✨ SUCCESS! Comprehensive logging is working properly!
+   Every function is being tracked and logged.
+
+💡 To inspect logs:
+   tail -f logs/flow.log              # Watch in real-time
+   grep '[412e0480]' logs/flow.log     # View this session
+   grep ERROR logs/flow.log           # Find errors
+
+

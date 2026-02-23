@@ -1,0 +1,14 @@
+Summarize these search results about: {course_title}
+
+Description: {course_description}
+
+Search Results:
+{formatted_results}
+
+Extract:
+1. Key topics and concepts
+2. Recommended modules with estimated hours
+3. Learning objectives
+4. Required skills
+
+Return valid JSON only.

@@ -1,0 +1,9 @@
+REQUIREMENTS:
+- {num_modules} modules, ~{avg_hours_per_module:.1f}h each
+- Total: ~{total_hours}h
+- Bloom levels: progress from {primary_bloom_start} to higher
+- Mode emphasis: {mode_emphasis}
+- 3-5 objectives per module (specific, measurable)
+- Logically sequenced
+- Include capstone if mode requires it
+- Reference confidence ≥ 0.7

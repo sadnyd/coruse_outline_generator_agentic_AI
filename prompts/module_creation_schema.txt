@@ -1,0 +1,23 @@
+OUTPUT FORMAT (STRICT JSON ONLY):
+{
+  "course_title": "exact title",
+  "course_summary": "150-300 word overview",
+  "modules": [
+    {
+      "module_id": "M_1",
+      "title": "string",
+      "description": "module overview",
+      "estimated_hours": 6.0,
+      "learning_objectives": [
+        {"statement": "measurable objective", "bloom_level": "understand|apply|analyze", "assessment_method": "quiz|project|discussion"}
+      ],
+      "lessons": [{"title": "string", "duration_minutes": 60, "key_concepts": ["concept"]}],
+      "assessment_type": "quiz|project|exam|capstone",
+      "prerequisites": ["string"],
+      "has_capstone": false
+    }
+  ],
+  "course_level_objectives": [{"statement": "string", "bloom_level": "string"}],
+  "references": [{"title": "string", "source_type": "retrieved|web|pdf", "confidence_score": 0.85}]
+}
+CRITICAL: Return ONLY valid JSON.
